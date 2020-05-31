@@ -79,7 +79,7 @@ function rowConverter(data, _, columns) {
     };
 }
 
-d3.csv("departmentDensity.csv", rowConverter).then(function (data) {
+d3.csv("DepartmentDensity.csv", rowConverter).then(function (data) {
     console.log("Data", data);
     d3.json("gadm36_FRA.json").then(function (topology) {
         console.log("Topology", topology);
